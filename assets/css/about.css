@@ -1,0 +1,24 @@
+.aboutContainer {
+    width: 100%;
+}
+
+
+.aboutContainer article {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.aboutContainer article div img {
+    max-width: 15rem;
+}
+
+.aboutContainer article div p {
+    text-align: left;
+    padding: 1rem;
+}
+
+.aboutContainer article div h3 {
+    text-align: center;
+}

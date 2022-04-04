@@ -1,0 +1,12 @@
+#socialMedia ul li img {
+    height: 2rem;
+}
+
+#socialMedia ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#socialMedia {
+    padding: 4rem;
+}
