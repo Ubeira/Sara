@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "SendFlowers";
+    src: url("../fonts/SendFlowers-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#pageTitle {
+    background-color: #000000;
+}
+
+#pageTitle div.pageTitleContainer a {
+    display: flex;
+    justify-content: center;
+    text-decoration-color: #ffffff;
+}
+
+
+
+h1,
+h2 {
+    font-family: SendFlowers;
+    color: #ffffff;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 0.3rem 0 0.3rem 5rem;
+    background-color: #000000;
+}
+
+hr {
+    padding: 0 0 0.5rem 0;
+    color: #585858;
+}
+
+
+
+main h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subTitleLink svg {
+    height: 1rem;
+    padding-right: 2rem;
+}
+
+
+/*navBar*/
+#navBar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navBar ul li {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    background-color: white;
+    letter-spacing: 0.1em;
+    width: 5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    overflow: hidden;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+#navBar ul li a {
+    color: white;
+    mix-blend-mode: difference;
+}
+
+#navBar ul li::before {
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: inherit;
+    background-color: #000000;
+    border-radius: 50%;
+    top: 0;
+    left: -0.75em;
+    transition: 0.5s ease-out;
+}
+
+#navBar ul li:hover::before {
+    transform: scale(7);
+}
