@@ -24,22 +24,28 @@
                 <img src="./assets/images/meVoyPorqueQuiero.jpg" alt="">
                 <figcaption>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum porro deleniti doloribus
-                        provident
-                        officia!</p>
-                    <button>Descubre más!</button>
+                        provident</p>
+                    <button>
+                        <a href="https://www.amazon.es/Me-voy-porque-quiero-echen-ebook/dp/B07RLXVH79">
+                            Descubre más!
+                        </a>
+                    </button>
 
                 </figcaption>
             </figure>
         </section>
         <section class="cardContainer">
-            <h1>POEMAS</h1>
+            <h1>POEMARIOS</h1>
             <figure class="imgContainer ">
                 <img src="./assets/images/tresPuertas.jpg" alt="">
                 <figcaption>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum porro deleniti doloribus
-                        provident
-                        officia!</p>
-                    <button>Descubre más!</button>
+                        provident</p>
+                    <button>
+                        <a href="https://www.amazon.es/Tres-puertas-Sara-Trigo/dp/8419022691">
+                            Descubre más!
+                        </a>
+                    </button>
                 </figcaption>
             </figure>
         </section>
@@ -57,7 +63,8 @@
         </section>
         <section id="contact">
             <h1>CONTACTAME</h1>
-            <form action="">
+            <form action="mailto:ubeiram@gmail.com" method="POST" enctype="multipart/form-data" name="Emailform"
+                id="mailForm">
                 <fieldset>
                     <label for="name">Nombre</label>
                     <input type="text" id="label" name="name">
@@ -68,9 +75,9 @@
                 </fieldset>
                 <fieldset>
                     <label for="message">Mensaje</label>
-                    <input type="text" name="message" id="message">
+                    <input type="textarea" name="message" id="message">
                 </fieldset>
-                <button>SEND MESSAGE</button>
+                <button id="submitMail">SEND MESSAGE</button>
             </form>
         </section>
         <section id="social">
@@ -81,9 +88,11 @@
                             <img src="." alt="">
                         </a></li>
                     <li><a href=""><img src="./assets/images/iconos/twitter.svg" alt=""></a></li>
-                    <li><a href=""><img src="./assets/images/iconos/instagram.svg" alt=""></a></li>
-                    <li><a href=""><img src="./assets/images/iconos/facebook.svg" alt=""></a></li>
-                    <li><a href=""><img src="./assets/images/iconos/email.svg" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/trigo__sara/?hl=es"><img
+                                src="./assets/images/iconos/instagram.svg" alt=""></a></li>
+                    <li><a href="https://es-es.facebook.com/sara.trigo.1829"><img
+                                src="./assets/images/iconos/facebook.svg" alt=""></a></li>
+                    <li><a href="mailto:correo@gmail.com"><img src="./assets/images/iconos/gmail.svg" alt=""></a></li>
                 </ul>
             </nav>
         </section>
@@ -92,4 +101,14 @@
         </footer>
     </main>
 </body>
+<script type="text/javascript">
+    const mailForm = document.getElementById("mailForm")
+    mailForm.onsubmit = function (e) {
+        e.preventDefault()
+        const formData = new FormData(e.target)
+        const data = (Object.fromEntries(formData))
+        window.open(`mailto:test@example.com?subject=Web:${data.name}&body=${data.message}`);
+
+    }
+</script>
 </html>
