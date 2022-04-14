@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    --imgHeight: 9rem;
+    --imgWidth: 6.5rem;
+    --imgBlurr: rgba(101, 39, 28, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    border-bottom: 1px solid black;
+    height: 30rem;
+}
+
+/*Intro*/
+
+#titleSection header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 3rem 1rem;
+    gap: 2.5rem;
+}
+
+#titleSection header div h1 {
+    font-size: 3.25rem;
+    line-height: 1.1;
+}
+
+#titleSection header div p {
+    line-height: 1rem;
+}
+
+/*cards*/
+
+.cardContainer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+
+.cardContainer h1 {
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+.cardContainer p {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    line-height: 2rem;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    margin: 2rem 0 1rem 0;
+    border: 2px solid black;
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    font-weight: 600;
+    font-size: large;
+}
+
+/*Images*/
+#titleSection header {
+    background-image: url("../images/carla.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.imgBlurr {
+    height: 100%;
+    background-color: var(--imgBlurr)
+}
+
+#meVoy {
+    background-image: url("../images/meVoyPorqueQuiero.jpg");
+}
+
+.cardImage {
+    background-repeat: no-repeat;
+    padding: 1rem;
+    background-size: contain;
+    width: 100%;
+    height: var(--imgHeight);
+}
+
+#trespuertas {
+    background-image: url("../images/tresPuertas.jpg");
+}
+
+#me {}
